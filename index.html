@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOTO ROAM | Jurnal & Ekspedisi Touring Motor Nusantara</title>
+  <meta name="description" content="Landing page resmi ekspedisi dan jurnal petualangan touring motor solo & grup mengelilingi jalur eksotis Indonesia dan dunia." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-compass-drafting logo-icon"></i>
+        <span>MOTO<span class="text-orange">ROAM</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Profil Rider</a>
+        <a href="#expeditions" class="nav-link">Rute Touring</a>
+        <a href="#rig" class="nav-link">Setup Motor</a>
+        <a href="#calculator" class="nav-link">Kalkulator Trip</a>
+        <a href="#gallery" class="nav-link">Galeri</a>
+        <a href="#contact" class="nav-link btn-nav-mobile">Hubungi / Ride-Along</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-motorcycle"></i> Join Next Ride
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="status-badge pulse">
+          <span class="pulse-dot"></span>
+          <i class="fa-solid fa-location-dot"></i> Ekspedisi Saat Ini: <strong>Trans-Sumatra 2026</strong>
+        </div>
+
+        <h1 class="hero-title">
+          DUA RODA, <span class="text-gradient">SEJUTA CERITA,</span> SATU TUJUAN.
+        </h1>
+
+        <p class="hero-subtitle">
+          Selamat datang di portal jurnal resmi <strong>Rangga 'Asphalt Nomad' Westra</strong>. 
+          Menjelajahi keindahan Indonesia dari aspal jalanan hingga jalur tanah ekstrim, menembus batas kenyamanan demi kebebasan di atas dua roda.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#expeditions" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-map-location-dot"></i> Jelajahi Rute Ekspedisi
+          </a>
+          <a href="#calculator" class="btn btn-glass btn-lg">
+            <i class="fa-solid fa-calculator"></i> Estimator Bahan Bakar & Trip
+          </a>
+        </div>
+
+        <!-- Live Odometer Counter Cards -->
+        <div class="odometer-grid">
+          <div class="odometer-card">
+            <div class="odometer-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="odometer-data">
+              <span class="odometer-number" data-target="148250">0</span> <span class="unit">KM</span>
+              <span class="label">Total Jarak Tempuh</span>
+            </div>
+          </div>
+
+          <div class="odometer-card">
+            <div class="odometer-icon"><i class="fa-solid fa-map-pin"></i></div>
+            <div class="odometer-data">
+              <span class="odometer-number" data-target="34">0</span> <span class="unit">Provinsi</span>
+              <span class="label">Nusantara Jelajah</span>
+            </div>
+          </div>
+
+          <div class="odometer-card">
+            <div class="odometer-icon"><i class="fa-solid fa-mountain"></i></div>
+            <div class="odometer-data">
+              <span class="odometer-number" data-target="3371">0</span> <span class="unit">MDPL</span>
+              <span class="label">Puncak Tertinggi (Kelimutu)</span>
+            </div>
+          </div>
+
+          <div class="odometer-card">
+            <div class="odometer-icon"><i class="fa-solid fa-campground"></i></div>
+            <div class="odometer-data">
+              <span class="odometer-number" data-target="184">0</span> <span class="unit">Malam</span>
+              <span class="label">Moto-Camping Wild</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rider Profile / About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="grid grid-2 align-center">
+        <div class="about-image-wrapper">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80" alt="Rangga Motorcycle Traveler" class="about-img" />
+            <div class="experience-badge">
+              <span class="years">12+</span>
+              <span class="exp-text">Tahun Pengalaman Touring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-helmet-safety"></i> MANTRA DAN FILOSOFI
+          </div>
+          <h2 class="section-title">
+            "Menikmati Angin, Menghormati Jalanan, Menyatu dengan Alam."
+          </h2>
+          <p class="text-lead">
+            Saya percaya bahwa perjalanan terbaik tidak diukur dari seberapa cepat kita sampai di tujuan, melainkan seberapa dalam kita merasakan setiap lekuk jalan, menyapa warga lokal, dan menikmati aroma hujan di atas aspal panas.
+          </p>
+
+          <p class="text-body">
+            Sejak tahun 2014, saya merambah jalur solo touring lintas Sumatera, Jawa, Bali, Lombok, Flores, hingga Sulawesi. Dari kemacetan kota hingga jalur berlumpur tanpa sinyal seluler, motor touring bukan sekadar kendaraan, melainkan sahabat setia pembuka pintu petualangan.
+          </p>
+
+          <!-- Badges Grid -->
+          <div class="rider-badges">
+            <div class="badge-item">
+              <i class="fa-solid fa-shield-halved text-orange"></i>
+              <div>
+                <strong>Certified Adventure Rider</strong>
+                <p>Off-road & Safety Riding Certified</p>
+              </div>
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-tent text-orange"></i>
+              <div>
+                <strong>Wild Camping Enthusiast</strong>
+                <p>Self-sufficient Solo Moto Camper</p>
+              </div>
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-camera-retro text-orange"></i>
+              <div>
+                <strong>Route Documentarian</strong>
+                <p>GPX Mapping & Landscape Vlogger</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gear-pills-wrapper">
+            <h4 class="subheading-sm"><i class="fa-solid fa-toolbox"></i> Key Gear Checklist:</h4>
+            <div class="gear-pills">
+              <span class="pill"><i class="fa-solid fa-headset"></i> Sena 50S Mesh</span>
+              <span class="pill"><i class="fa-solid fa-vest"></i> REV'IT GoreTex Suit</span>
+              <span class="pill"><i class="fa-solid fa-route"></i> Garmin Zumo XT2</span>
+              <span class="pill"><i class="fa-solid fa-suitcase"></i> Kriega Overlander 100L</span>
+              <span class="pill"><i class="fa-solid fa-satellite"></i> Garmin inReach Mini SOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expeditions & Routes Section -->
+  <section class="section routes-section" id="expeditions">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-map"></i> REKAM JEJAK JALUR
+        </div>
+        <h2 class="section-title">Rute Ekspedisi Terfavorit & Panduan Track</h2>
+        <p class="section-subtitle">
+          Pilih kategori rute untuk melihat detail jarak, tingkat kesulitan terrain, serta rekomendasi tempat moto-camping terbaik.
+        </p>
+      </div>
+
+      <!-- Route Filters -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Semua Rute</button>
+        <button class="filter-btn" data-filter="mountain">Pegunungan & Kelok</button>
+        <button class="filter-btn" data-filter="coastal">Pesisir & Pantai</button>
+        <button class="filter-btn" data-filter="offroad">Off-Road & Extreme</button>
+        <button class="filter-btn" data-filter="interisland">Lintas Pulau</button>
+      </div>
+
+      <!-- Route Cards Grid -->
+      <div class="routes-grid">
+
+        <!-- Card 1 -->
+        <div class="route-card" data-category="mountain">
+          <div class="route-img-container">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Dieng to Bromo Route" />
+            <span class="difficulty-tag hard">Tantangan Tinggi</span>
+            <div class="route-overlay">
+              <span class="overlay-text"><i class="fa-solid fa-eye"></i> Klik Detail Itinerary</span>
+            </div>
+          </div>
+          <div class="route-content">
+            <div class="route-meta">
+              <span><i class="fa-solid fa-road"></i> 1,450 KM</span>
+              <span><i class="fa-solid fa-clock"></i> 7 Hari</span>
+              <span><i class="fa-solid fa-gauge"></i> Aspal & Tanah</span>
+            </div>
+            <h3 class="route-title">Ring of Java: Dieng Plateau to Mt. Bromo Trail</h3>
+            <p class="route-desc">
+              Menembus kabut dataran tinggi Dieng, menyusuri Kelok 44 Gunung Lawu, hingga menghadapi lautan pasir Bromo yang legendaris.
+            </p>
+            <div class="route-highlights">
+              <span><i class="fa-solid fa-check text-orange"></i> Sunrise Penanjakan</span>
+              <span><i class="fa-solid fa-check text-orange"></i> Jalur Kebun Teh Dieng</span>
+            </div>
+            <div class="route-footer">
+              <span class="route-elevation"><i class="fa-solid fa-arrow-trend-up"></i> Max 2,329m</span>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-title="Ring of Java: Dieng to Bromo" data-dist="1,450 KM" data-days="7 Hari" data-desc="Perjalanan mendalam melintasi tulang punggung pegunungan pulau Jawa. Direkomendasikan menggunakan ban Dual Purpose. Titik rawan: Lautan Pasir Bromo (debu & pasir lepas) dan tanjakan ekstrim Candi Cetho.">
+                Detail GPX <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="route-card" data-category="coastal">
+          <div class="route-img-container">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="West Sumatra Coastal Route" />
+            <span class="difficulty-tag medium">Sedang</span>
+            <div class="route-overlay">
+              <span class="overlay-text"><i class="fa-solid fa-eye"></i> Klik Detail Itinerary</span>
+            </div>
+          </div>
+          <div class="route-content">
+            <div class="route-meta">
+              <span><i class="fa-solid fa-road"></i> 2,100 KM</span>
+              <span><i class="fa-solid fa-clock"></i> 10 Hari</span>
+              <span><i class="fa-solid fa-gauge"></i> Mulus Aspal</span>
+            </div>
+            <h3 class="route-title">Sumatra West Coast Highway: Padang to Aceh</h3>
+            <p class="route-desc">
+              Menikmati semilir angin Samudra Hindia dari tebing pantai Mandeh, melintasi Kelok 9, hingga menembus hutan TNGL di Aceh.
+            </p>
+            <div class="route-highlights">
+              <span><i class="fa-solid fa-check text-orange"></i> Sunset Sunset Mandeh</span>
+              <span><i class="fa-solid fa-check text-orange"></i> Jembatan Kelok 9</span>
+            </div>
+            <div class="route-footer">
+              <span class="route-elevation"><i class="fa-solid fa-arrow-trend-up"></i> Max 1,200m</span>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-title="Sumatra West Coast: Padang to Aceh" data-dist="2,100 KM" data-days="10 Hari" data-desc="Pemandangan tebing pesisir pantai terbaik di Indonesia. Jalanan mayoritas mulus namun harus waspada terhadap tikungan tajam dan cuaca hujan mendadak di kawasan hutan tropis.">
+                Detail GPX <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="route-card" data-category="interisland">
+          <div class="route-img-container">
+            <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80" alt="Flores Overland Expedition" />
+            <span class="difficulty-tag hard">Tantangan Tinggi</span>
+            <div class="route-overlay">
+              <span class="overlay-text"><i class="fa-solid fa-eye"></i> Klik Detail Itinerary</span>
+            </div>
+          </div>
+          <div class="route-content">
+            <div class="route-meta">
+              <span><i class="fa-solid fa-road"></i> 3,200 KM</span>
+              <span><i class="fa-solid fa-clock"></i> 14 Hari</span>
+              <span><i class="fa-solid fa-gauge"></i> Mix Terrain & Kapal</span>
+            </div>
+            <h3 class="route-title">Flores & Komodo Crossing: Labuan Bajo - Larantuka</h3>
+            <p class="route-desc">
+              Ekspedisi pulau eksotis NTT. Berkemah di pinggir Danau Kelimutu 3 Warna, membedah jalanan berliku Manggarai, dan penyeberangan feri Bali-Lombok-Sumbawa-Flores.
+            </p>
+            <div class="route-highlights">
+              <span><i class="fa-solid fa-check text-orange"></i> Danau 3 Warna Kelimutu</span>
+              <span><i class="fa-solid fa-check text-orange"></i> Kampung Adat Wae Rebo</span>
+            </div>
+            <div class="route-footer">
+              <span class="route-elevation"><i class="fa-solid fa-arrow-trend-up"></i> Max 1,630m</span>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-title="Flores Overland Expedition" data-dist="3,200 KM" data-days="14 Hari" data-desc="Petualangan antar pulau sesungguhnya. Memerlukan fisik prima, manajemen waktu penyeberangan kapal RORO, serta bahan bakar cadangan (jerrycan 5L) di area Sumbawa timur.">
+                Detail GPX <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="route-card" data-category="offroad">
+          <div class="route-img-container">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Sulawesi Trans Overland" />
+            <span class="difficulty-tag extreme">Extreme Off-Road</span>
+            <div class="route-overlay">
+              <span class="overlay-text"><i class="fa-solid fa-eye"></i> Klik Detail Itinerary</span>
+            </div>
+          </div>
+          <div class="route-content">
+            <div class="route-meta">
+              <span><i class="fa-solid fa-road"></i> 1,800 KM</span>
+              <span><i class="fa-solid fa-clock"></i> 8 Hari</span>
+              <span><i class="fa-solid fa-gauge"></i> 60% Off-Road Mud</span>
+            </div>
+            <h3 class="route-title">Toraja Highland & Heart of Sulawesi Mud Track</h3>
+            <p class="route-desc">
+              Jalur tanah berlumpur ekstrim menembus lembah kuno Toraja, tebing batu padas, dan perbatasan hutan rimba Sulawesi Selatan & Tengah.
+            </p>
+            <div class="route-highlights">
+              <span><i class="fa-solid fa-check text-orange"></i> Rumah Kuno Tongkonan</span>
+              <span><i class="fa-solid fa-check text-orange"></i> Extreme Mud Crossing</span>
+            </div>
+            <div class="route-footer">
+              <span class="route-elevation"><i class="fa-solid fa-arrow-trend-up"></i> Max 1,980m</span>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-title="Toraja Mud Track & Sulawesi Heart" data-dist="1,800 KM" data-days="8 Hari" data-desc="Khusus pengendara berpengalaman dengan ban knobby murni (70/30 offroad). Sangat disarankan membawa winch portabel, alat tambal ban tubeless/tubetype lengkap, dan walkie talkie.">
+                Detail GPX <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- The Rig / Bike Specs Section -->
+  <section class="section rig-section" id="rig">
+    <div class="container">
+      <div class="grid grid-2 align-center">
+        <div class="rig-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-screwdriver-wrench"></i> THE WAR MACHINE
+          </div>
+          <h2 class="section-title">Spesifikasi & Modification Setup Motor Touring</h2>
+          <p class="text-lead">
+            Kendaraan andalan utama: <strong>BMW R 1250 GS Adventure "Black Rhino Edition"</strong>. Dirancang untuk keandalan jarak jauh tanpa kompromi di segala medan.
+          </p>
+
+          <!-- Spec Tabs -->
+          <div class="specs-accordion">
+            <div class="spec-card">
+              <div class="spec-header">
+                <span><i class="fa-solid fa-engine text-orange"></i> Performa Mesin & Transmisi</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="spec-body">
+                <ul>
+                  <li><strong>Tipe Mesin:</strong> 1,254cc 2-Cylinder Boxer with ShiftCam System</li>
+                  <li><strong>Tenaga Maksimal:</strong> 136 HP @ 7,750 RPM | 143 Nm Torque</li>
+                  <li><strong>Kapasitas Tangki:</strong> 30 Liter (Daya Jangkau ~620 KM)</li>
+                  <li><strong>Transmisi:</strong> 6-Speed Constant Mesh with Quickshifter Pro</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="spec-card">
+              <div class="spec-header">
+                <span><i class="fa-solid fa-shield text-orange"></i> Modifikasi Protection & Safety</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="spec-body">
+                <ul>
+                  <li><strong>Crashbars:</strong> Touratech Stainless Upper & Lower Guards</li>
+                  <li><strong>Skidplate:</strong> 4mm Heavy Duty Aluminum Belly Pan</li>
+                  <li><strong>Headlight Guard:</strong> Clear Polycarbonate Quick-Release Protector</li>
+                  <li><strong>Tires:</strong> Heidenau K60 Scout Dual-Purpose 50/50</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="spec-card">
+              <div class="spec-header">
+                <span><i class="fa-solid fa-satellite-dish text-orange"></i> Cockpit & Navigasi Deck</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="spec-body">
+                <ul>
+                  <li><strong>Navigasi Utama:</strong> Garmin Zumo XT2 All-Weather GPS</li>
+                  <li><strong>Pencahayaan Tambahan:</strong> Clearwater LED Sevina Lights (15,000 Lumens)</li>
+                  <li><strong>Daya & Monitoring:</strong> Dual USB QuickCharge + TPMS Tire Pressure Monitor</li>
+                  <li><strong>Luggage:</strong> Lone Rider Motobags Semi-Rigid Waterproof System 110L</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rig-image-wrapper">
+          <div class="glass-card rig-card">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" alt="Motorcycle Rig Setup" class="rig-img" />
+            <div class="rig-specs-overlay">
+              <div class="spec-badge-float top-left">
+                <i class="fa-solid fa-gas-pump"></i> 30L Long Range Tank
+              </div>
+              <div class="spec-badge-float bottom-right">
+                <i class="fa-solid fa-bolt"></i> 15,000 Lumens LED
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Trip & Fuel Estimator Calculator -->
+  <section class="section calc-section" id="calculator">
+    <div class="container">
+      <div class="calc-wrapper glass-card">
+        <div class="calc-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-calculator"></i> FITUR INTERAKTIF</div>
+          <h2 class="section-title">Kalkulator Estimasi Bahan Bakar & Perjalanan Touring</h2>
+          <p class="section-subtitle">
+            Rencanakan rute Anda sendiri! Masukkan jarak tempuh impian Anda untuk mengetahui estimasi kebutuhan bensin, biaya, waktu berkendara, dan saran istirahat.
+          </p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="form-group">
+              <label for="calcDistance"><i class="fa-solid fa-road"></i> Total Jarak Rute (KM):</label>
+              <input type="number" id="calcDistance" value="650" min="10" max="10000" step="10" class="form-control" />
+              <input type="range" id="rangeDistance" value="650" min="50" max="3000" step="50" class="range-slider" />
+            </div>
+
+            <div class="form-group">
+              <label for="calcTerrain"><i class="fa-solid fa-mountain-sun"></i> Jenis Medan / Terrain:</label>
+              <select id="calcTerrain" class="form-control">
+                <option value="1.0">Aspal Mulus Lurus (Efisiensi Tinggi - 22 KM/L)</option>
+                <option value="1.25" selected>Jalan Berliku & Pegunungan (Sedang - 17.5 KM/L)</option>
+                <option value="1.6">Off-Road & Berlumpur Ekstrim (Boros - 13.5 KM/L)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calcFuelType"><i class="fa-solid fa-gas-pump"></i> Opsi Bahan Bakar (IDR/Liter):</label>
+              <select id="calcFuelType" class="form-control">
+                <option value="13700">Pertamax / RON 92 (Rp 13.700/L)</option>
+                <option value="14800" selected>Pertamax Turbo / RON 98 (Rp 14.800/L)</option>
+                <option value="16500">Bensin Eceran Pelosok / Reserve (Rp 16.500/L)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-results">
+            <h3 class="results-title"><i class="fa-solid fa-chart-pie"></i> Hasil Estimasi Trip</h3>
+            <div class="results-grid">
+              <div class="result-box">
+                <span class="result-label">Est. Kebutuhan Bensin</span>
+                <span class="result-value" id="resLiters">37.1 L</span>
+              </div>
+              <div class="result-box glow-box">
+                <span class="result-label">Est. Biaya Bahan Bakar</span>
+                <span class="result-value text-orange" id="resCost">Rp 549.000</span>
+              </div>
+              <div class="result-box">
+                <span class="result-label">Est. Waktu Berkendara</span>
+                <span class="result-value" id="resHours">11.8 Jam</span>
+              </div>
+              <div class="result-box">
+                <span class="result-label">Saran Titik Istirahat (Stops)</span>
+                <span class="result-value" id="resStops">4 - 5 Kali</span>
+              </div>
+            </div>
+            <div class="calc-note">
+              <i class="fa-solid fa-circle-info text-orange"></i> 
+              <em>*Estimasi dihitung berdasarkan konsumsi rata-rata motor adventure 1000cc+ dengan perlengkapan lengkap (riding pace aman 55 km/jam).</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery / Moto-Camping Logs -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag"><i class="fa-solid fa-camera"></i> JURNAL VISUAL</div>
+        <h2 class="section-title">Momen Terbaik & Moto-Camping Under The Stars</h2>
+        <p class="section-subtitle">
+          Koleksi foto terbaik dari sudut-sudut paling eksotis yang berhasil dijangkau bersama kuda besi.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-caption="Moto-Camping di Pinggir Danau Kelimutu">
+          <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80" alt="Moto camping under starry sky" />
+          <div class="gallery-caption">
+            <h4>Night Camping under Milky Way</h4>
+            <p>Danau Kelimutu, NTT</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Menembus Kabut Pagi Tanjakan Kelok 44">
+          <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Motorcycle cockpit fog" />
+          <div class="gallery-caption">
+            <h4>Morning Fog Ride</h4>
+            <p>Kelok 44 Sumatera Barat</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Sunset di Tebing Pantai Mandeh">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Sunset coastal motorcycle" />
+          <div class="gallery-caption">
+            <h4>Ocean Cliff Sunset</h4>
+            <p>Pesisir Selatan Mandeh</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Lautan Pasir Bromo Sunrise Ride">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Bromo sand sea ride" />
+          <div class="gallery-caption">
+            <h4>Sand Sea Crossing</h4>
+            <p>Taman Nasional Bromo Tengger</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Join Next Ride Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="grid grid-2 align-center">
+        <div class="contact-info">
+          <div class="section-tag"><i class="fa-solid fa-handshake"></i> LINTAS KOMUNITAS</div>
+          <h2 class="section-title">Ingin Touring Bareng atau Butuh Rekomendasi GPX Track?</h2>
+          <p class="text-lead">
+            Saya selalu terbuka untuk berdiskusi seputar rute touring, bertukar data GPX file, kolaborasi video vlog, atau mengadakan *ride-along* bersama teman-teman komunitas motor!
+          </p>
+
+          <div class="contact-methods">
+            <div class="method-item">
+              <i class="fa-brands fa-instagram text-orange"></i>
+              <div>
+                <strong>Instagram Direct:</strong>
+                <p>@asphalt_nomad_id</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <i class="fa-brands fa-youtube text-orange"></i>
+              <div>
+                <strong>YouTube Channel:</strong>
+                <p>Rangga Moto Travel Logs</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <i class="fa-solid fa-envelope text-orange"></i>
+              <div>
+                <strong>Email Expedisi:</strong>
+                <p>explore@motoroam.id</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-card">
+          <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan / Request GPX</h3>
+          <form id="contactForm" onsubmit="return false;">
+            <div class="form-group">
+              <label for="name">Nama Lengkap / Handle Bikers:</label>
+              <input type="text" id="name" required class="form-control" placeholder="Contoh: Alex 'Iron Rider'" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Alamat Email:</label>
+              <input type="email" id="email" required class="form-control" placeholder="nama@domain.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="motorcycle">Motor yang Digunakan:</label>
+              <input type="text" id="motorcycle" class="form-control" placeholder="Contoh: CB500X / Versys 250 / Tenere 700" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan / Rute yang Ingin Ditanyakan:</label>
+              <textarea id="message" rows="4" required class="form-control" placeholder="Tuliskan pertanyaan rute, ajakan ride, atau request file track GPX..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="btnSubmit">
+              <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <i class="fa-solid fa-compass-drafting logo-icon"></i>
+          <span>MOTO<span class="text-orange">ROAM</span></span>
+        </a>
+        <p>Jurnal petualangan solo & grup touring motor lintas Nusantara.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Profil Rider</a></li>
+          <li><a href="#expeditions">Rute Touring</a></li>
+          <li><a href="#rig">Setup Motor</a></li>
+          <li><a href="#calculator">Kalkulator Trip</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Ikuti Petualangan</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Strava"><i class="fa-brands fa-strava"></i></a>
+          <a href="#" aria-label="Wikiloc"><i class="fa-solid fa-map-location"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 MOTO ROAM - All Rights Reserved. Crafted with passion for Motorcycle Adventurers.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Detail Route GPX -->
+  <div class="modal-overlay" id="routeModal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-header">
+        <i class="fa-solid fa-map-marked-alt text-orange modal-icon"></i>
+        <h3 id="modalTitle">Title</h3>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats">
+          <span id="modalDist"><i class="fa-solid fa-road"></i> -</span>
+          <span id="modalDays"><i class="fa-solid fa-calendar"></i> -</span>
+        </div>
+        <p id="modalDesc">Description</p>
+        <div class="gpx-download-box">
+          <i class="fa-solid fa-file-code text-orange"></i>
+          <div>
+            <strong>File GPX Ready to Import</strong>
+            <p>Kompatibel dengan Garmin Zumo, OsmAnd, Locus Map, & Maps.me</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnDownloadGpx">
+          <i class="fa-solid fa-download"></i> Simpan Track GPX (.gpx)
+        </button>
+        <button class="btn btn-outline" id="modalCloseBtn">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Gallery Modal -->
+  <div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="Enlarged gallery view" id="lightboxImg" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

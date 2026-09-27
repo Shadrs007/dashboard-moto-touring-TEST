@@ -1,0 +1,7 @@
+services:
+  moto-landing:
+    build: .
+    container_name: moto-landing
+    restart: unless-stopped
+    ports:
+      - "80:80"
